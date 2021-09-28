@@ -1,18 +1,18 @@
 :root {
     --gridSize: ;
 }
-
+#etch-a-sketch-case {
+    background-color: red;
+}
 #etch-a-sketch-container {
     display: grid;
     grid-template-columns: repeat(var(--gridSize), 0fr);
 }
 .block {
-    border-style: solid;
-    border-color: black;
-    border-width: 0.5px;
-    width: 20px;
-    height: 20px;
+    background-color: rgb(201, 199, 199);
+    width: 10px;
+    height: 10px;
 }
-.block:hover {
-    background-color: red;
+.block.hovered {
+    background-color: rgb(75, 75, 75);
 }

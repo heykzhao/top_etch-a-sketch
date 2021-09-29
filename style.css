@@ -2,7 +2,6 @@
     --gridSize: ;
 }
 #etch-a-sketch-case {
-    background-color: red;
 }
 #etch-a-sketch-container {
     display: grid;

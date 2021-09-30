@@ -16,16 +16,30 @@ function addColor(e) {
 };
 
 function clearBoard() {
-    etchASketchBlocks.forEach(etchASketchBlock => etchASketchBlock.classList.remove("hovered"))
+    etchASketchBlocks.forEach(etchASketchBlock => etchASketchBlock.classList.remove("hovered"));
 };
 
+function stopDrawing() {
+    etchASketchBlocks.forEach(etchASketchBlock => etchASketchBlock.removeEventListener("mouseover",addColor, false));
+}
+
+function startDrawing() {
+    etchASketchBlocks.forEach(etchASketchBlock => etchASketchBlock.addEventListener("mouseover",addColor));
+}
+
 const etchASketchBlocks = document.querySelectorAll(".block");
-etchASketchBlocks.forEach(etchASketchBlock => etchASketchBlock.addEventListener("mouseover",addColor));
+
+startDrawing();
+
 
 //keyboard shortcuts
 const clearBoardButton = document.querySelector("#clear-board-button");
 document.onkeyup = function(e){
     if (e.key == "c") {
         clearBoardButton.click();
-    };
-}
+    } else if (e.key == "s") {
+        stopDrawing();
+    } else if (e.key == "d") {
+        startDrawing();
+    }
+};

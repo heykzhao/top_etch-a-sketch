@@ -1,11 +1,36 @@
 :root {
     --gridSize: ;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+}
 #etch-a-sketch-case {
+    flex-direction: column;
+    background-color: red;
+    max-width: fit-content;
+}
+#case-nameplate {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: gold;
 }
 #etch-a-sketch-container {
     display: grid;
     grid-template-columns: repeat(var(--gridSize), 0fr);
+    justify-content: center;
+    align-content: center;
+    margin: 10px 50px 10px 50px;
+}
+#etch-a-sketch-buttons-section {
+    justify-content: center;
+    align-content: center;
 }
 .block {
     background-color: rgb(201, 199, 199);

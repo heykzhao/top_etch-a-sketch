@@ -6,19 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch A Sketch</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bonheur+Royale">
 </head>
 <body>
-    <div id="main-focus-area">
-        <div id="instructions-section">
-            <h3>How-To</h3>
-            <p>Press "C" or the "Clear Board" button to clear all markings on the board.</p>
-            <p>Press "S" to stop drawing.</p>
-            <p>Press "D" to start drawing again, if stopped.</p>
-            <p>Use the slider to control grid-size.</p>
-        </div>
-        <div id="etch-a-sketch-case">
-            <h1 id="case-nameplate">Etch-A-Sketch</h1>
-            <div id="etch-a-sketch-container"></div>
+    <div id="main-body-area">
+        <div id="main-focus-area">
+            <div id="etch-a-sketch-case">
+                <h1 id="case-nameplate">Etch-A-Sketch</h1>
+                <div id="etch-a-sketch-container"></div>
+            </div>
             <div id="etch-a-sketch-buttons-section">
                 <div id="clear-board-section">
                     <button id="clear-board-button" onclick="clearBoard()">Clear Board</button>
@@ -26,12 +22,20 @@
                 <div id="slider-section">
                     <input type="range" min="32" max="64" value="32" class="knob" id="squareWidth">
                 </div>
-            </div>  
+            </div>
+        </div>
+        <div id="instructions-section">
+            <h3>How-To</h3>
+            <ul class="instruction-list">
+                <li>Press "<u><strong>C</strong></u>"or the "Clear Board" button to clear all markings on the board.</li>
+                <li>Use the slider to control the board size.</li>
+                <li>Press "<u><strong>S</strong></u>" to stop drawing.</li>
+                <li>Press "<u><strong>D</strong></u>" to start drawing again, if stopped.</li>
+            </ul>
         </div>
     </div>
     <footer>
-        <p>Copyright © 2021 heykzhao</p>
-        <a href="https://www.github.com/heykzhao">GitHub</a>
+        <p>Copyright © 2021 <a href="https://www.github.com/heykzhao">heykzhao</a><p>
     </footer>
     <script src="app.js"></script>
 </body>

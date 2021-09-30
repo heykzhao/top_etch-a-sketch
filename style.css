@@ -1,16 +1,22 @@
 :root {
     --gridSize: ;
 }
-
 body {
+    background-color: pink;
+}
+#main-focus-area {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-items: center;
 }
-
-.container {
+#instructions-section {
     display: flex;
+    flex-direction: column;
+    background-color: white;
 }
 #etch-a-sketch-case {
+    display: flex;
     flex-direction: column;
     background-color: red;
     max-width: fit-content;
@@ -26,12 +32,14 @@ body {
     grid-template-columns: repeat(var(--gridSize), 0fr);
     justify-content: center;
     align-content: center;
-    margin: 10px 50px 10px 50px;
+    margin: 0px 58.44px 10px 58.44px;
 }
 #etch-a-sketch-buttons-section {
+    display: flex;
     justify-content: center;
     align-content: center;
 }
+
 .block {
     background-color: rgb(201, 199, 199);
     width: 10px;
@@ -39,4 +47,15 @@ body {
 }
 .block.hovered {
     background-color: rgb(75, 75, 75);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    bottom: 0;
+    height: 2.5rem;
+    width: 100%;
 }

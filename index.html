@@ -8,26 +8,30 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div id="instructions-section">
-        <p>Press "C" or the "Clear Board" button to clear all markings on the board.</p>
-        <p>Press "S" to stop drawing.</p>
-        <p>Press "D" to start drawing again, if stopped.</p>
-        <p>Use the slider to control grid-size.</p>
-    </div>
-    <div class="container" id="etch-a-sketch-case">
-        <h1 id="case-nameplate">Etch-A-Sketch</h1>
-        <div class="container" id="etch-a-sketch-container"></div>
-        <div class="container" id="etch-a-sketch-buttons-section">
-            <div id="clear-board-section">
-                <button id="clear-board-button" onclick="clearBoard()">Clear Board</button>
-            </div>
-            <div id="slider-section">
-                <input type="range" min="32" max="64" value="32" class="knob" id="squareWidth">
-            </div>
-        </div>  
+    <div id="main-focus-area">
+        <div id="instructions-section">
+            <h3>How-To</h3>
+            <p>Press "C" or the "Clear Board" button to clear all markings on the board.</p>
+            <p>Press "S" to stop drawing.</p>
+            <p>Press "D" to start drawing again, if stopped.</p>
+            <p>Use the slider to control grid-size.</p>
+        </div>
+        <div id="etch-a-sketch-case">
+            <h1 id="case-nameplate">Etch-A-Sketch</h1>
+            <div id="etch-a-sketch-container"></div>
+            <div id="etch-a-sketch-buttons-section">
+                <div id="clear-board-section">
+                    <button id="clear-board-button" onclick="clearBoard()">Clear Board</button>
+                </div>
+                <div id="slider-section">
+                    <input type="range" min="32" max="64" value="32" class="knob" id="squareWidth">
+                </div>
+            </div>  
+        </div>
     </div>
     <footer>
-        Copyright 2021 - Kevin
+        <p>Copyright © 2021 heykzhao</p>
+        <a href="https://www.github.com/heykzhao">GitHub</a>
     </footer>
     <script src="app.js"></script>
 </body>

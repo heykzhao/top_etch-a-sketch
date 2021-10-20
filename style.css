@@ -1,8 +1,16 @@
 :root {
     --gridSize: ;
 }
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
 body {
     background-image: url(./images/Circuit\ Board.svg);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0px;
 }
 h3 {
     font-family: "Bonheur Royale", sans-serif;
@@ -140,13 +148,35 @@ h3 {
     background-color: rgb(75, 75, 75);
 }
 
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
+.footer {
     position: absolute;
-    bottom: 0;
-    height: 2.5rem;
-    width: 100%;
+    bottom: 50px;
+    left: 0;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+.nameplate {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: black;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.copyright {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.github-logo {
+    display: inline-block;
+    margin-left: 10px;
+    height: 25px;
 }
